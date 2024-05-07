@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wrapper">
+        <h2>Type a sentence</h2>
+        <div>
+            <textarea id="textinput" cols="30" rows="16"></textarea>
+
+        </div>
+        <div>
+            <button type="submit" onclick="f1()">Calculate words</button>
+        </div>
+        <div id="result">
+
+        </div>
+
+    </div>
+    <script>
+        function f1(){
+        let res=document.getElementById("textinput").value
+        let a=res.split(" ")
+        let result=document.getElementById("result")
+        result.innerHTML = a.length + " words"
+    }
+    </script>
+</body>
+</html>
